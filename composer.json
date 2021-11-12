@@ -1,0 +1,40 @@
+{
+	"name": "xwp/blocks",
+	"description": "XWP site blocks",
+	"type": "project",
+	"keywords": [],
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://wpackagist.org"
+		}
+	],
+	"require": {
+		"wp-coding-standards/wpcs": "^2.3"
+	},
+	"require-dev": {
+		"squizlabs/php_codesniffer": "^3.0",
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.0"
+	},
+	"config": {
+		"process-timeout": 3000,
+		"platform": {
+			"php": "7.3"
+		}
+	},
+	"extra": {
+		"hooks": {
+			"pre-commit": "composer lint",
+			"pre-push": "composer test",
+			"prepare-commit-msg": "./scripts/git-hooks/prepare-commit-msg $1"
+		}
+	},
+	"scripts": {
+		"lint": [
+			"vendor/squizlabs/php_codesniffer/bin/phpcs"
+		],
+		"fix": [
+			"vendor/squizlabs/php_codesniffer/bin/phpcbf"
+		]
+	}
+}

@@ -1,0 +1,17 @@
+.wp-block-xwp-blocks-team {
+  display: flex;
+  flex-wrap: wrap; }
+  .wp-block-xwp-blocks-team.has-1-columns .wp-block-xwp-blocks-team-member {
+    width: calc(100%/1); }
+  .wp-block-xwp-blocks-team.has-2-columns .wp-block-xwp-blocks-team-member {
+    width: calc(100%/2); }
+  .wp-block-xwp-blocks-team.has-3-columns .wp-block-xwp-blocks-team-member {
+    width: calc(100%/3); }
+  .wp-block-xwp-blocks-team .wp-block-xwp-blocks-team-member__name {
+    margin-bottom: 0 !important; }
+  .wp-block-xwp-blocks-team .wp-block-xwp-blocks-team-member__role {
+    columns: #828282;
+    margin-top: 0 !important; }
+
+
+/*# sourceMappingURL=editor.css.map*/

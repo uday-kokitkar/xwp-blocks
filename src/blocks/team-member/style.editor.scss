@@ -1,0 +1,20 @@
+.wp-block-xwp-blocks-team {
+	display: flex;
+	flex-wrap: wrap;
+	@for $cols from 1 to 4 {
+		&.has-#{$cols}-columns {
+			.wp-block-xwp-blocks-team-member {
+				width: calc(100%/#{$cols});
+			}
+		}
+	}
+	.wp-block-xwp-blocks-team-member {
+		&__name {
+			margin-bottom: 0 !important;
+		}
+		&__role {
+			columns: #828282;
+			margin-top: 0 !important;
+		}
+	}
+}

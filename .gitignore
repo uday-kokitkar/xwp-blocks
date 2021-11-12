@@ -21,3 +21,12 @@ node_modules/
 *.log
 *.sql
 *.sqlite
+
+# MacOS system file
+.DS_Store
+
+# Any temp file
+temp
+
+# ignore vendor files
+vendor
